@@ -36,15 +36,32 @@ System.Console.WriteLine(count);
 
 double[] numbers = { 0.25, 5.4, 1.3, 2.1, 3.8, 5.2, 3.01 };
 double FindMin(double[] numbers)
-{double Min = numbers[0];
-foreach (double e in numbers)
 {
-    if (e < Min)
+    double Min = numbers[0];
+    foreach (double e in numbers)
+    {
+        if (e < Min)
         {
-        Min = e;
+            Min = e;
+        }
     }
+    return Min;
 }
-return Min;
+double Min = FindMin(numbers);
+Console.WriteLine(Min);
+
+double FindMax(double[] numbers)
+{
+    double Max = numbers[0];
+    foreach (double e in numbers)
+    {
+        if (e > Max)
+        {
+            Max = e;
+        }
+    }
+    return Max;
 }
-double Min = FindMin(double[] numbers);
-System.Console.WriteLine(Min);
+double Max = FindMax(numbers);
+Console.WriteLine(Max);
+Console.WriteLine(Max - Min);
