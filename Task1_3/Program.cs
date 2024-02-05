@@ -88,17 +88,6 @@ while(i < size)
 //Семинар 4 
 //Задание 1. Задайте одномерный массив, заполненный случайными
 //числами. Определите количество простых чисел в этом массиве.
-Random rnd = new Random();
-int size = 6;
-int[] arr_int = new int[size];
-int i = 0;
-while (i < size)
-{
-    arr_int[i] = rnd.Next(1, 100);
-    i++;
-}
-
-//определяем простое число или нет
 bool IsPrime(int number)
 {
     for (int i = 2; i < number; i++)
@@ -108,38 +97,100 @@ bool IsPrime(int number)
     }
     return true;
 }
-    //Задание 2. Задайте массив из N случайных целых чисел (N вводится с
-    //клавиатуры). Найдите количество чисел, которые оканчиваются на 1 и
-    //делятся нацело на 7.
-    /*
-    System.Console.WriteLine("Введите количество элементов массива:");
-    int N = int.Parse(Console.ReadLine());
-    Random rnd = new Random();
-    int size = N;
-    int[] arr_int = new int[size];
-    int i = 0;
-    while (i < size)
-    {
-        arr_int[i] = rnd.Next(1, 100);
-        i++;
-    }
-    */
-    /*Задание 3. Заполните массив на N (вводится с консоли, не более 8)
-    случайных целых чисел от 0 до 9.
-    Сформируйте целое число, которое будет состоять из цифр из
-    массива. Старший разряд числа находится на 0-м индексе,
-    младший – на последнем.*/
-    /*
-    int []array = new int [8]
-    for (int i = 0; i < 8; i++)
-    {
-        System.Console.WriteLine("Введите {i+1}-й элемент массива, любое число от 0 до 9:");
-        int value = int.Parse(Console.ReadLine());
-        int array[i] = value        
-    }
-string StrNum = Num.ToString(array);
-for (int i = 0; i < StrNum.Length); i++)
+
+int[] GetRandomArray(int size, int minValue = 1, int maxValue = 99)
 {
-    System.Console.Write($"{StrNum[i]}");
+    int[] array = new int[size];
+    Random rnd = new Random();
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = rnd.Next(minValue, maxValue + 1);
+
+    }
+    return array;
 }
+
+int[] GetArrayFromConsole()
+{
+    Console.Write("Size: ");
+    int size = int.Parse(Console.ReadLine()!);
+    int[] array = new int[size];
+
+    Console.WriteLine($"Enter {size} elements:");
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = int.Parse(Console.ReadLine()!);
+    }
+    return array;
+
+}
+
+void PrintArray(int[] array)
+{
+    Console.Write("[");
+    foreach (int number in array)
+    {
+        Console.Write(number + " ");
+    }
+    Console.WriteLine("]");
+}
+
+int CountPrimeNumbers(int[] array)
+{
+    int count = 0;
+    foreach (var elem in array)
+    {
+        if (IsPrime(elem))
+        {
+            count++;
+        }
+    }
+    return count;
+}
+/*
+
+int[] array = GetRandomArray(6);
+PrintArray(array);
+
+int[] array2 = GetArrayFromConsole();
+PrintArray(array2);
+
+System.Console.WriteLine($"результат: {CountPrimeNumbers(array)}");
+System.Console.WriteLine($"результат: {CountPrimeNumbers(array2)}");
 */
+
+/*Задание 3. Заполните массив на N (вводится с консоли, не более 8)
+случайных целых чисел от 0 до 9.
+Сформируйте целое число, которое будет состоять из цифр из
+массива. Старший разряд числа находится на 0-м индексе,
+младший – на последнем.*/
+int[] GetArrayFrCons()
+{
+    Console.Write("Enter Size < 9: ");
+    int size = int.Parse(Console.ReadLine()!);
+    int[] array = new int[size];
+
+    Random rnd = new Random();
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = rnd.Next(0, 10);
+
+    }
+    return array;
+}
+
+int ConvertDigToInt(int[] array)
+{
+    int res = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        int tmpResult = array[i] * (int)Math.Pow(10, array.Length - i - 1);
+        System.Console.Write($"{tmpResult} ");   
+        res += tmpResult;   
+    }
+    return res;
+}
+
+int[] array = GetArrayFrCons();
+PrintArray(array);
+System.Console.WriteLine($"результат {ConvertDigToInt(array)}");
