@@ -1,0 +1,15 @@
+G:\Learning\Task1\Tasktemp\bin\Debug\net8.0\Tasktemp.exe
+G:\Learning\Task1\Tasktemp\bin\Debug\net8.0\Tasktemp.deps.json
+G:\Learning\Task1\Tasktemp\bin\Debug\net8.0\Tasktemp.runtimeconfig.json
+G:\Learning\Task1\Tasktemp\bin\Debug\net8.0\Tasktemp.dll
+G:\Learning\Task1\Tasktemp\bin\Debug\net8.0\Tasktemp.pdb
+G:\Learning\Task1\Tasktemp\obj\Debug\net8.0\Tasktemp.GeneratedMSBuildEditorConfig.editorconfig
+G:\Learning\Task1\Tasktemp\obj\Debug\net8.0\Tasktemp.AssemblyInfoInputs.cache
+G:\Learning\Task1\Tasktemp\obj\Debug\net8.0\Tasktemp.AssemblyInfo.cs
+G:\Learning\Task1\Tasktemp\obj\Debug\net8.0\Tasktemp.csproj.CoreCompileInputs.cache
+G:\Learning\Task1\Tasktemp\obj\Debug\net8.0\Tasktemp.sourcelink.json
+G:\Learning\Task1\Tasktemp\obj\Debug\net8.0\Tasktemp.dll
+G:\Learning\Task1\Tasktemp\obj\Debug\net8.0\refint\Tasktemp.dll
+G:\Learning\Task1\Tasktemp\obj\Debug\net8.0\Tasktemp.pdb
+G:\Learning\Task1\Tasktemp\obj\Debug\net8.0\Tasktemp.genruntimeconfig.cache
+G:\Learning\Task1\Tasktemp\obj\Debug\net8.0\ref\Tasktemp.dll

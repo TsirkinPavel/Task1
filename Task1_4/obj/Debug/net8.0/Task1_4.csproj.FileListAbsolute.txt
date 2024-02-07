@@ -1,0 +1,15 @@
+G:\Learning\Task1\Task1_4\bin\Debug\net8.0\Task1_4.exe
+G:\Learning\Task1\Task1_4\bin\Debug\net8.0\Task1_4.deps.json
+G:\Learning\Task1\Task1_4\bin\Debug\net8.0\Task1_4.runtimeconfig.json
+G:\Learning\Task1\Task1_4\bin\Debug\net8.0\Task1_4.dll
+G:\Learning\Task1\Task1_4\bin\Debug\net8.0\Task1_4.pdb
+G:\Learning\Task1\Task1_4\obj\Debug\net8.0\Task1_4.GeneratedMSBuildEditorConfig.editorconfig
+G:\Learning\Task1\Task1_4\obj\Debug\net8.0\Task1_4.AssemblyInfoInputs.cache
+G:\Learning\Task1\Task1_4\obj\Debug\net8.0\Task1_4.AssemblyInfo.cs
+G:\Learning\Task1\Task1_4\obj\Debug\net8.0\Task1_4.csproj.CoreCompileInputs.cache
+G:\Learning\Task1\Task1_4\obj\Debug\net8.0\Task1_4.sourcelink.json
+G:\Learning\Task1\Task1_4\obj\Debug\net8.0\Task1_4.dll
+G:\Learning\Task1\Task1_4\obj\Debug\net8.0\refint\Task1_4.dll
+G:\Learning\Task1\Task1_4\obj\Debug\net8.0\Task1_4.pdb
+G:\Learning\Task1\Task1_4\obj\Debug\net8.0\Task1_4.genruntimeconfig.cache
+G:\Learning\Task1\Task1_4\obj\Debug\net8.0\ref\Task1_4.dll

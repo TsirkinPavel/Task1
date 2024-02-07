@@ -52,3 +52,18 @@ ShowMatrix(matrix);
 /*Задача 3: Задайте прямоугольный двумерный массив.
 Напишите программу, которая будет находить строку с
 наименьшей суммой элементов.*/
+string GetLettersFromStr(string s)
+{
+    string letters = "";
+    foreach (char e in s)
+    {
+        if (char.IsAsciiLetter(e) == true)
+        {
+            letters = letters + e;
+        }        
+    }
+    return letters;
+}
+string str = Console.ReadLine()!;
+string result = GetLettersFromStr(str);
+System.Console.WriteLine(result);
