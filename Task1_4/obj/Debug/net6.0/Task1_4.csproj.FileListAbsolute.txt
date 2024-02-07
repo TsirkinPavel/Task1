@@ -13,3 +13,4 @@ G:\Learning\Task1\Task1_4\obj\Debug\net6.0\refint\Task1_4.dll
 G:\Learning\Task1\Task1_4\obj\Debug\net6.0\Task1_4.pdb
 G:\Learning\Task1\Task1_4\obj\Debug\net6.0\Task1_4.genruntimeconfig.cache
 G:\Learning\Task1\Task1_4\obj\Debug\net6.0\ref\Task1_4.dll
+G:\Learning\Task1\Task1_4\obj\Debug\net6.0\Task1_4.sourcelink.json

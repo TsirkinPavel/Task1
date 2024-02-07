@@ -4,7 +4,7 @@
 //    Console.WriteLine(i);
 //    i++;
 //}
-// ЗАДАНИЕ1 нахождение большего из 2 чисел
+//ЗАДАНИЕ1 нахождение большего из 2 чисел
 //int firstNumber = 5;
 //int secondNumber = 6;
 //if (firstNumber > secondNumber)
@@ -47,7 +47,7 @@
 //}
 
 //ЗАДАНИЕ 4 Вывести четные числа
-int number = 8;
+int number = 157;
 for (int i = 2; i <= number; i+=2)
 {
    Console.Write($"{i} "); 

@@ -1,8 +1,8 @@
-﻿// Знакомство с языками программирования (семинары)
+﻿// Знакомство с языками программирования (семинары).Содержание:
 //1. Урок 4. Двумерные Массивы. Строки. (Лекция)
 //2. Урок 4. Функции Домашнее задание
 
-//Функция Создание матрицы заполненной случайными числами
+//1.Функция Создание матрицы заполненной случайными числами
 /*int[,] CreateRndMatrix(int rowsCount, int columnsCount)
 {
     int[,] matrix = new int[rowsCount, columnsCount];
@@ -66,7 +66,7 @@ foreach (int e in matrix)
     }
 }*/
 
-// Семинар. Работа со строками
+// Лекция. Работа со строками
 // Задача3. Считать с консоли строку состоящую из лат.букв и цифр. Сформировать новую строку
 // только из букв исходной строки.
 string GetLettersFromStr(string s)
@@ -74,7 +74,7 @@ string GetLettersFromStr(string s)
     string letters = "";
     foreach (char e in s)
     {
-        if (char.IsAsciiLetter(e) == true)
+        if (char.IsAskiiLetter(e) == true)
         {
             letters = letters + e;
         }        
@@ -84,3 +84,6 @@ string GetLettersFromStr(string s)
 string str = Console.ReadLine()!;
 string result = GetLettersFromStr(str);
 System.Console.WriteLine(result);
+
+
+//2. Урок 4. Функции Домашнее задание
