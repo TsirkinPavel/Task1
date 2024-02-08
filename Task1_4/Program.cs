@@ -91,7 +91,7 @@ System.Console.WriteLine(result);
  запрашивает целые числа с консоли. Программа завершается 
  при вводе символа ‘q’ или при вводе числа, сумма цифр которого чётная.*/
 
-int sumNumbers(int number)
+/*int sumNumbers(int number)
 {
     int sum = 0;
     while (number > 0)
@@ -139,9 +139,63 @@ while (true)
     }
 
 }
+*/
 
 /*Задача 2: Задайте массив заполненный случайными трёхзначными числами. 
 Напишите программу, которая покажет количество чётных чисел в массиве.*/
 
+int[] GetRandomArray(int size, int minValue, int maxValue)
+{
+    int[] array = new int[size];
+    Random rnd = new Random();
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = rnd.Next(minValue, maxValue + 1);
+
+    }
+    return array;
+}
+
+void PrintArray(int[] array)
+{
+    foreach (int e in array)
+    {
+        System.Console.Write($"{e} ");
+    }
+    System.Console.WriteLine();
+}
+
+/*bool GetEven(int elem)
+{
+    if (elem % 2 == 0)
+    {
+        return true;
+    }
+    else return false;
+}
+
+int[] newArray = GetRandomArray (5, 0, 999);
+int sumEven = 0;
+foreach (int e in newArray)
+{
+   if (GetEven(e) == true)
+   {
+    sumEven++;
+   } 
+}
+PrintArray(newArray);
+System.Console.WriteLine($"в массиве {sumEven} четных элементов");
+*/
+
 /*Задача 3: Напишите программу, которая перевернёт одномерный массив (первый
 элемент станет последним, второй – предпоследним и т.д.)*/
+
+int size = 5;
+int[] newArray = GetRandomArray(size, 0, 999);
+PrintArray(newArray);
+int[] ReversArray = new int[size];
+for (int i = 0; i < size; i++)
+{
+    ReversArray[size-1-i] = newArray[i];
+}
+PrintArray(ReversArray);  

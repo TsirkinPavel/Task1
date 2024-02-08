@@ -33,6 +33,23 @@ void ShowMatrix(int[,] matrix)
 int[,] matrix = CreateRndMatrix(4, 4);
 ShowMatrix(matrix);
 System.Console.WriteLine();
+
+//Функция суммирования всех элементов массива
+int Sum(int[,] array)
+{
+    int sum = 0;
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            sum += array[i, j];
+        }
+    }
+
+    return sum;
+}
+
+
 for (int i = 0; i < matrix.GetLength(0); i++)
 {
     for (int j = 0; j < matrix.GetLength(1); j++)
