@@ -1,0 +1,15 @@
+G:\Learning\Task1\Task1_1\obj\Debug\net8.0\Task1_1.GeneratedMSBuildEditorConfig.editorconfig
+G:\Learning\Task1\Task1_1\obj\Debug\net8.0\Task1_1.AssemblyInfoInputs.cache
+G:\Learning\Task1\Task1_1\obj\Debug\net8.0\Task1_1.AssemblyInfo.cs
+G:\Learning\Task1\Task1_1\obj\Debug\net8.0\Task1_1.csproj.CoreCompileInputs.cache
+G:\Learning\Task1\Task1_1\obj\Debug\net8.0\Task1_1.sourcelink.json
+G:\Learning\Task1\Task1_1\bin\Debug\net8.0\Task1_1.exe
+G:\Learning\Task1\Task1_1\bin\Debug\net8.0\Task1_1.deps.json
+G:\Learning\Task1\Task1_1\bin\Debug\net8.0\Task1_1.runtimeconfig.json
+G:\Learning\Task1\Task1_1\bin\Debug\net8.0\Task1_1.dll
+G:\Learning\Task1\Task1_1\bin\Debug\net8.0\Task1_1.pdb
+G:\Learning\Task1\Task1_1\obj\Debug\net8.0\Task1_1.dll
+G:\Learning\Task1\Task1_1\obj\Debug\net8.0\refint\Task1_1.dll
+G:\Learning\Task1\Task1_1\obj\Debug\net8.0\Task1_1.pdb
+G:\Learning\Task1\Task1_1\obj\Debug\net8.0\Task1_1.genruntimeconfig.cache
+G:\Learning\Task1\Task1_1\obj\Debug\net8.0\ref\Task1_1.dll
