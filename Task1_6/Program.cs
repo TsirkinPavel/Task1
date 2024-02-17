@@ -90,15 +90,17 @@ System.Console.WriteLine("введите произвольную строку")
 string str2 = Console.ReadLine()!;
 int res = CountVowels(str2);
 System.Console.WriteLine($"Количество гласных:{res}");
+*/
 
-//ДРУГОЕ из семинара
+//ДРУГОЕ из семинара: вводятся числа через запятую, преобразовываются в численный массив
+/*
 //string input = Console.ReadLine()!;
 string input = "1, 3, 5";
 
 // int[] numbers = input.Split(", ").Select(x => int.Parse(x)).ToArray();
 int[] numbers = input.Split(", ").Select(int.Parse).ToArray();
-
-Console.WriteLine(string.Join(", ", numbers));
+//а теперь обратно собираются в строку, разделенную буквой Ы
+Console.WriteLine(string.Join(" Ы ", numbers));
 */
 
 /*2.Урок 6. Лекция Рекурсия
@@ -135,11 +137,174 @@ System.Console.WriteLine(Fact(n));
 //3.Урок 7. Семинар. Рекурсия
 /* Задание 1. Напишите программу, которая будет принимать на вход число и
 возвращать сумму его цифр. Указание Использовать рекурсию.*/
-
+/*int SumDigit(int value)
+{
+    value = Math.Abs(value);
+    if (value == 0)
+    {
+        return 0;
+    }
+    int sum = value % 10 + SumDigit(value / 10);
+    return sum;
+}
+Console.WriteLine($"введите число");
+int n = Convert.ToInt32(Console.ReadLine()!);
+System.Console.WriteLine(SumDigit(n));
+*/
 /* Задание 2. Задайте значение N. Напишите программу, которая выведет
 все натуральные числа в промежутке от 1 до N.
 Указание Использовать рекурсию. Не использовать цикл.*/
+/*void PrintDigit(int min, int max)
+{
+    if (min > max)
+    {
+        System.Console.WriteLine();
+        return;
+    }
+    System.Console.Write(min + " ");
+    PrintDigit(min + 1, max);
+}
+
+PrintDigit(5, 10);
+*/
+
 
 /* Задание 3. Считать строку с консоли, содержащую латинские буквы.
 Вывести на экран согласные буквы этой строки.
-Указание Использовать рекурсию. Не использовать цикл./*
+Указание Использовать рекурсию. Не использовать цикл.*/
+
+//4.Домашнее задание Урок 6. Массивы и строки
+/*Задача 1: Задайте двумерный массив символов (тип char [,]). Создать строку из символов
+этого массива.*/
+/*string ArrayToString(char[,] array)
+{
+    string str = "";
+    foreach (char e in array)
+    {
+        str = str + " "+ e;
+    }
+    return str;
+}
+char[,] array = {
+    { 'a', 'b', 'c' },
+{'d', 'e', 'f'}
+};
+System.Console.WriteLine(ArrayToString(array));
+*/
+/*Задача 2: Задайте строку, содержащую латинские буквы в обоих регистрах. Сформируйте строку,
+в которой все заглавные буквы заменены на строчные.*/
+
+/*Console.InputEncoding = System.Text.Encoding.GetEncoding("utf-16");
+
+char HighToLow(string str)
+{
+    //string result = str.ToLower();
+    int size = str.Length;
+    char[] word = new char[size];
+    for (int i = 0; i < size; i++)
+    {
+        word[i] = str[i];
+        if ('A' <= word[i] && word[i] <= 'Z')
+
+        {
+            word[i] = word[i] + 'a' - 'A';
+        }
+    }
+
+    return word[size];
+}
+System.Console.WriteLine("введите произвольную строку");
+string str2 = Console.ReadLine()!;
+
+System.Console.WriteLine($"Result:{HighToLow(str2)}");
+*/
+
+//Задача 3: Задайте произвольную строку. Выясните, является ли она палиндромом.
+// Метод для проверки, является ли строка палиндромом
+/* 
+bool IsPalindrome(string str)
+{
+// Нормализация строки путем удаления не буквенно-цифровыхсимволов и приведения к нижнему регистру
+string normalized = new
+string(str.Where(char.IsLetterOrDigit).ToArray()).ToLower();
+//либо более простой вариант:
+string FormatString(string str)
+{
+    string format_string = str.ToLower().Replace(" ", "");
+    //Console.WriteLine(format_string);
+    return format_string;
+}
+
+// Сравнение строки с ее перевернутым вариантом
+return normalized.SequenceEqual(normalized.Reverse());
+}
+*/
+//второй вариант решения:
+/*Console.InputEncoding = System.Text.Encoding.GetEncoding("utf-16");
+
+bool IsPolindrom(string str)
+{
+    bool polindrom = true;
+    int size = str.Length;
+    for (int i = 0; i < size / 2; i++)
+    {
+        if (str[i] != str[size - 1 - i])
+        {
+            polindrom = false;
+            break;
+        }       
+    }
+    return polindrom;
+}
+
+void PrintAnswer(string input)
+{
+    if (IsPolindrom(input))
+    {
+        System.Console.WriteLine("Полиндром");
+    }
+    else
+    {
+        System.Console.WriteLine("Не полиндром");
+    }
+}
+System.Console.Write("Введите текст: ");
+string input = Console.ReadLine()!;
+PrintAnswer(input);
+*/
+/*Задача 4*(не обязательная): Задайте строку, состоящую из слов, разделенных пробелами. 
+Сформировать строку, в которой слова расположены в обратном порядке. В полученной строке 
+слова должны быть также разделены пробелами.*/
+// Метод для обращения порядка слов в строке
+/*
+string ReverseWords(string str)
+{
+// Разделение строки на слова
+string[] words = str.Split(' ');
+// Обращение порядка слов
+Array.Reverse(words);
+// Соединение слов обратно в строку с пробелами
+return string.Join(" ", words);
+}
+*/
+//Второй вариант решения:
+/*Console.InputEncoding = System.Text.Encoding.GetEncoding("utf-16");
+string ReverseStrings(string input)
+{
+    string[] words = input.Split(' ');
+    string tmp;
+    for (int i = 0; i < words.Length / 2; i++)
+    {
+        tmp = words[i];
+        words[i] = words[words.Length - 1 - i];
+        words[words.Length - 1 - i] = tmp;
+    }
+    string revers_text = string.Join( ' ', words);
+    return revers_text;
+}
+
+System.Console.Write("Text: ");
+string input = Console.ReadLine()!;
+string revers_text = ReverseStrings(input);
+Console.WriteLine($"{revers_text}");
+*/
